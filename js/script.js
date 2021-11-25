@@ -3,7 +3,7 @@ const studente = {
     nome: 'alberto',
     cognome: 'lisi',
     eta: 25
-}
+};
 
 // Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
 for(let key in studente) {
@@ -43,3 +43,9 @@ for(let i = 0; i < studenti.length; i++){
 }
 // Dare la possibilità all’utente, attraverso 3 prompt(), 
 // di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+const nuovoStudente = {
+    nome: prompt('scrivi il nome:'),
+    cognome: prompt('scrivi il cognome:'),
+    eta: parseInt(prompt('scrivi l\' età:')),
+};
+studenti.push(nuovoStudente);
