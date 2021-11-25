@@ -4,3 +4,11 @@
 // Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 // Dare la possibilità all’utente, attraverso 3 prompt(), 
 // di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+const studente = {
+    nome: 'alberto',
+    cognome: 'lisi',
+    eta: 25
+}
+for (let key in studente) {
+    console.log(studente[key]);
+}
